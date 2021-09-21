@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <button id="nappi">Click Me!</button>
+    <p id="tuloste"></p>
+
+    <script>
+        
+        const btn = document.querySelector("#nappi");
+        btn.addEventListener("click", oneToTen);
+        function oneToTen() {
+            const output = document.querySelector("#tuloste");
+            for(let i=0; i<11; i++) {
+                output.innerHTML += `<p style="font-size: ${0+i*3}px">Tässä on luku ${i}. <br>`;
+               
+            };
+        };
+        
+    </script>
+</body>
+</html>

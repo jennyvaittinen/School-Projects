@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <button id="nappi">Click Me!</button>
+    <div id="container"></div>
+    
+    <script>
+        const arr = [2, 4, 6, 8, 10];
+        const output = document.querySelector("#container");
+        const btn = document.querySelector("#nappi");
+        btn.addEventListener("click", result);
+
+        function timesThree(item, index) {
+            arr[index] = arr[index]*3;
+        };
+
+        function result() {
+            arr.forEach(timesThree);
+            output.innerHTML = arr;
+        };
+
+ 
+
+
+    </script>
+</body>
+</html>

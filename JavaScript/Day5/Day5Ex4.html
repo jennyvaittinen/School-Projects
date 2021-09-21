@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <h1>Lomakkeen tiedonhaku, silmukka ja tulostus</h1>
+    <p id="laskelma"></p>
+    <p id="kertotaulu"></p>
+    <input type="number" id="nro" placeholder="Esim. 4">
+    <button id="nappi">Lähetä</button>
+    <script>
+        const nappula = document.getElementById("nappi");
+        const muutaP = document.getElementById("laskelma");
+        const taulu = document.getElementById("kertotaulu");
+        function kertotaulu() {
+            
+            const num = document.getElementById("nro");
+            const numero = parseInt(num.value);
+            for(let i = 0; i<11; i++) {
+                taulu.innerHTML += i*numero + "<br>";
+            };
+            muutaP.innerHTML = "Valitsit numeron: " + numero;
+        };
+
+        nappula.addEventListener("click", kertotaulu);
+        
+    </script>
+</body>
+</html>

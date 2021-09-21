@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+
+    <label for="numero">Anna luku:</label>
+    <input type="number" id="numero" name="numero">
+    <input type="submit" id="submit" name="submit">
+    <p id="tulostus"></p>
+    <script>
+    
+    const output = document.querySelector("#tulostus");
+    const btn = document.querySelector("#submit");
+    btn.addEventListener("click", arvioiLuku);
+
+    function arvioiLuku() {
+
+        const num = document.querySelector("#numero").value;
+        if(num <= 10 && num >= -10) {
+            output.innerHTML = "Ok " + num;
+            output.style.color = "green";
+        } else if (num < -10) {
+            output.innerHTML = "Liian pieni.";
+            output.style.color = "black";
+        } else if (num > 10){
+            output.innerHTML = "Liian suuri.";
+            output.style.color = "black";
+        } else {
+            output.innerHTML = "error";
+            output.style.color = "red";
+        };
+    };
+    </script>
+</body>
+</html>

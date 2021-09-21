@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <p id="tervehdys"></p>
+    <input type="text" id="nimesi" placeholder="Kerro nimesi">
+    <button id="nappi">Click Me!</button>
+    <script>
+        const nappula = document.getElementById("nappi");
+       
+
+        nappula.addEventListener("click", function() {
+            const muutaP = document.getElementById("tervehdys");
+            const name = document.getElementById("nimesi");
+            const nimi = name.value;
+            muutaP.innerHTML = "Hei, sinun nimesi on: " + nimi;
+        });
+    </script>
+</body>
+</html>

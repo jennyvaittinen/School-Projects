@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <p id="summa"></p>
+    <input type="number" id="nro1" placeholder="Esim. 4">
+    <input type="number" id="nro2" placeholder="Esim. 8">
+    <button id="nappi">Lähetä</button>
+    <script>
+        const nappula = document.getElementById("nappi");
+        const muutaP = document.getElementById("summa");
+        function muutaTeksti() {
+            
+            const num1 = document.getElementById("nro1");
+            const numero1 = parseInt(num1.value);
+            const num2 = document.getElementById("nro2");
+            const numero2 = parseInt(num2.value);
+            const sum = numero1+numero2;
+            muutaP.innerHTML = "Numeroiden summa on  = " + sum;
+        };
+        nappula.addEventListener("click", muutaTeksti);
+    </script>
+</body>
+</html>
