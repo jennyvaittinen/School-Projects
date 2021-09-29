@@ -5,10 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Space Oddity</title>
 </head>
 <body>
+    <header class="bg-dark">
+        <div class="container-fluid py-3">
+            <h1 class="logo">
+                <span class="visually-hidden">Space Oddity</span>
+            </h1>
+        </div>
     
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-lg-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Main</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ground control</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Protein pills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Helmet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Countdown</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Engines on</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ignition</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <main>
+    
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/main-slider-1.jpg" class="d-block w-100" alt="Slide 1" />
+                    <div class="carousel-caption d-none d-md-block">
+                        Ground Control to Major Tom<br />
+                        Take your protein pills and put your helmet on
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/main-slider-2.jpg" class="d-block w-100" alt="Slide 2" />
+                    <div class="carousel-caption d-none d-md-block">
+                        I'm stepping through the door and<br />
+                        I'm floating in a most peculiar way
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/main-slider-3.jpg" class="d-block w-100" alt="Slide 3" />
+                    <div class="carousel-caption d-none d-md-block">
+                        And the stars look very different today
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <div class="container-fluid mt-5">
+    
+            <h1>Commencing countdown</h1>
+    
+            <div class="row">
+    
+                <div class="col-md-4 d-flex flex-column justify-content-between">
+                    <form action="login.php" method="post">
+                        <div class="mb-2">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="visually-hidden">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Log in</button>
+                    </form>
+                    <ul class="list-unstyled text-end">
+                        <li><a href="#">Create an account</a></li>
+                        <li><a href="#">Forgot your password?</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-8 order-md-first">
+                    <p>Ground Control to Major Tom. Take your protein pills and put your helmet on. Ground Control to Major Tom (ten, nine, eight, seven, six). Commencing countdown, engines on (five, four, three). Check ignition and may God's love be with you (two, one, liftoff).</p>
+    
+                    <p>This is Ground Control to Major Tom. You've really made the grade and the papers want to know whose shirts you wear. Now it's time to leave the capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door and I'm floating in a most peculiar way. And the stars look very different today. For here am I sitting in a tin can far above the world. <a href="#">Planet Earth</a> is blue and there's nothing I can do.</p>
+                        
+                    <p>Though I'm past one hundred thousand miles I'm feeling very still.</p>
+                </div>
+    
+            </div> <!-- /.row -->
+    
+            <div class="row mt-5">
+    
+                <div class="col-md text-center d-flex flex-column mb-5">
+                    <img src="images/spotlight-1.jpg" alt="Spotlight 1" />
+                    <h2>Feeling very still</h2>
+                    <p>I'm feeling very still and I think my spaceship knows which way to go. Tell my wife I love her very much she knows.</p>
+                    <a href="#" class="btn btn-primary mt-auto mx-auto">Read more</a>
+                </div>
+    
+                <div class="col-md text-center d-flex flex-column mb-5">
+                    <img src="images/spotlight-2.jpg" alt="Spotlight 2" />
+                    <h2>Sitting in a tin can</h2>
+                    <p>For here am I sitting in a tin can far above the world. Planet Earth is blue and there's nothing I can do.</p>
+                    <a href="#" class="btn btn-primary mt-auto mx-auto">Read more</a>
+                </div>
+    
+                <div class="col-md text-center d-flex flex-column mb-5">
+                    <img src="images/spotlight-3.jpg" alt="Spotlight 3" />
+                    <h2>Far above the world</h2>
+                    <p>I'm stepping through the door and I'm floating in a most peculiar way. And the stars look very different today.</p>
+                    <a href="#" class="btn btn-primary mt-auto mx-auto">Read more</a>
+                </div>
+    
+            </div> <!-- /.row -->
+    
+        </div> <!-- /.container-fluid -->
+    
+    </main>
+    
+    <footer class="bg-primary py-4">
+        <div class="container-fluid">
+    
+            <div class="row">
+                <div class="col-md">
+                    <h2 class="text-white">Contact</h2>
+                    <address>
+                        135 West 50th Street<br />
+                        New York, NY 10020<br />
+                        United States<br />
+                        <br />
+                        Tel. 888 511 5480<br />
+                        Email: info@spaceoddity.com
+                    </address>
+                </div>
+                <div class="col-md text-md-end">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Ground control</a></li>
+                        <li><a href="#">Protein pills</a></li>
+                        <li><a href="#">Helmet</a></li>
+                        <li><a href="#">Countdown</a></li>
+                        <li><a href="#">Engines on</a></li>
+                        <li><a href="#">Ignition</a></li>
+                    </ul>
+                </div>
+            </div> <!-- /.row -->
+    
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#" target="_blank"><img src="images/icon-facebook.svg" width="48" height="48" alt="Facebook" /></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" target="_blank"><img src="images/icon-instagram.svg" width="48" height="48" alt="Instagram" /></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" target="_blank"><img src="images/icon-twitter.svg" width="48" height="48" alt="Twitter" /></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" target="_blank"><img src="images/icon-pinterest.svg" width="48" height="48" alt="Pinterest" /></a>
+                </li>
+            </ul>
+    
+        </div> <!-- /.container-fluid  -->
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
