@@ -1,0 +1,59 @@
+#retroTv {
+    float: left;
+    width: 20%;
+    height: 20%;
+    border-top-style: dotted;
+    border-top-color: orange;
+    border-top-width: 1em;
+    border-bottom-style: dotted;
+    border-bottom-color:orange;
+    border-bottom-width: 1em;
+    margin: 1%;
+}
+
+#gameboy {
+    float:  right;
+    width: 20%;
+    height: 20%;
+    border-top-style: solid;
+    border-top-color: brown;
+    border-top-width: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-color: brown;
+    border-bottom-width: 0.5em;
+    margin: 1%;
+    
+}
+
+.retroTv {
+   text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#Listat {
+    
+}
+
+#workstation {
+    width: 20%;
+    height: 20%;
+}
+
+a:active {
+    color:darkorchid;
+}
+
+a:hover {
+    color:palevioletred
+}
+
+a:visited {
+    color:darkseagreen;
+}
+
+a:link {
+    color:rgb(56, 5, 82);
+}

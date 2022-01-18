@@ -1,0 +1,17 @@
+p {
+    font-family: Verdana;
+    font-size: 80%;
+    color: red;
+}
+
+h1 {
+    font-family: Arial;
+    color: blue;
+    font-size: 140%;
+}
+
+h2 {
+    font-family: Arial;
+    color: purple;
+    font-size: 90%;
+}
