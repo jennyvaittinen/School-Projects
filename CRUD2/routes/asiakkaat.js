@@ -6,7 +6,7 @@ const asiakas = require('../services/asiakkaat');
 // Hae yksi asiakas id:llä
 router.get('/:id', async function(req, res, next) {
   try {
-    res.json(await asiakas.get(req.params.id));
+    res.json(await asiakas.getOne(req.params.id));
   } catch (err) {
     console.error(`Error while getting client`, err.message);
     next(err);
